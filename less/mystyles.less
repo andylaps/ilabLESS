@@ -7,25 +7,128 @@ AL 18/06/16
 
 */ 
 
-@font-family-sans-serif:  "Freight Sans Pro", sans-serif;
-@font-family-serif:       "Freight Text Pro", serif;
-/* Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.*/
-@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+// Override colors 
 
-@font-family-base:        @font-family-serif;
+@paper-color:				#f5f5f5; // eggshell
+@feature2-color:			#aaa27b; // leather
+@feature1-color:			#0f1626; // navy
+@accent-color:				#b5313c; // red
+@base-text-color:			#828081; // tin
 
 
-@font-size-base:          14px;
+//## Settings for some of the most global styles
+@body-bg:               @paper-color;
+@text-color:            @base-text-color;
+@link-color:            @feature2-color;
+@link-hover-color:      @feature1-color; //AL
+// Link hover decoration
+@link-hover-decoration: none; //AL
 
-@text-color:            @gray-light;
+/*Fonts*/
+@font-family-sans-serif:  "Freight-Sans-Pro", sans-serif;
+@font-family-serif:       "Freight-Text-Pro", serif;
+@font-family-monospace:   "Courier New", monospace;
+
+/*Base font details*/
+@font-family-base:        	@font-family-serif; //AL
+@font-size-base:          	16px; //AL
+@font-weight-base:			300;	// light AL	
+@text-color:            	@base-text-color; //AL 
+
+
+/*Headings*/
+@headings-font-family:    @font-family-sans-serif; 
+@headings-font-weight:    700; // bold AL
+@headings-line-height:    1.1;
+@headings-color:          @feature2-color;
+
+@font-size-large:         ceil((@font-size-base * 1.25)); 
+@font-size-small:         ceil((@font-size-base * 0.85)); 
+
+@font-size-h1:            floor((@font-size-base * 2.6)); 
+@font-size-h2:            floor((@font-size-base * 2.15));
+@font-size-h3:            ceil((@font-size-base * 1.7)); 
+@font-size-h4:            ceil((@font-size-base * 1.25));
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85));
+
+
+//== Navbar
+//
+
+
+//##
+
+// Basics of a navbar
+@navbar-height:                    50px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-border-radius:             @border-radius-base;
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
+
+@navbar-default-color:             			@base-text-color; //AL 
+@navbar-default-bg:               			transparent; //AL 
+@navbar-default-border:            			none; //AL 
+// Navbar links
+@navbar-default-link-color:                @paper-color; //AL
+@navbar-default-link-hover-color:          @accent-color; //AL
+@navbar-default-link-hover-bg:             transparent; //AL
+@navbar-default-link-active-color:         red; //AL
+@navbar-default-link-active-bg:            transparent; //AL
+@navbar-default-link-disabled-color:       @feature2-color; //AL
+@navbar-default-link-disabled-bg:          transparent; //AL
+
+// Navbar brand label
+@navbar-default-brand-color:               @accent-color; //AL
+@navbar-default-brand-hover-color:         @feature1-color; //AL
+@navbar-default-brand-hover-bg:            transparent; //AL
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           red;
+@navbar-default-toggle-icon-bar-bg:        red;
+@navbar-default-toggle-border-color:       red;
+
+
+// Navs
+//
+//##
+
+body {
+	font-weight: @font-weight-base;
+}
 
 .bgimage {
-	background-image:	url('../images/ilab0001b.jpg');
+	background-image:	url('../images/ilab0001e.jpg');
 	background-position: center center;
 	background-size: cover;
 	height: 300px;
 }
 
+.navbar, .navbar-collapse {
+	font-family: @font-family-sans-serif;
+	font-size: @font-size-base * 1.6;
+	font-weight: 500;
+	padding-left: 15px;
+}
 
+.navbar li:hover, .navbar-collapse li:hover{
+		text-decoration: @link-hover-decoration;
+		background: rgba(255, 255, 255, 0.4); // fix for nav item transparency 
+		background-blend-mode: multiply;
+}
 
+.navbar li, .navbar-collapse li {
+	
+}
+
+.navbar-brand {
+	font-family: @font-family-sans-serif;	
+	font-size: @font-size-base * 3.2; 
+	font-weight: 700;
+	padding-left:0px;
+}
+
+.navbar-header{
+	/*padding:0px;*/
+}
