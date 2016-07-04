@@ -11,7 +11,7 @@ AL 18/06/16
 
 @paper-color:				#f5f5f5; // eggshell
 @feature2-color:			#aaa27b; // leather
-@feature1-color:			#0f1626; // navy
+@feature1-color:			#475b5c; // dark
 @accent-color:				#b5313c; // red
 @base-text-color:			#828081; // tin
 
@@ -19,8 +19,8 @@ AL 18/06/16
 //## Settings for some of the most global styles
 @body-bg:               @paper-color;
 @text-color:            @base-text-color;
-@link-color:            @feature2-color;
-@link-hover-color:      @feature1-color; //AL
+@link-color:            @feature1-color; //AL
+@link-hover-color:      @accent-color; //AL
 // Link hover decoration
 @link-hover-decoration: none; //AL
 
@@ -73,29 +73,49 @@ AL 18/06/16
 // Navbar links
 @navbar-default-link-color:                @paper-color; //AL
 @navbar-default-link-hover-color:          @accent-color; //AL
-@navbar-default-link-hover-bg:             transparent; //AL
-@navbar-default-link-active-color:         red; //AL
+@navbar-default-link-hover-bg:             rgba(255, 255, 255, 0.4); //AL
+@navbar-default-link-active-color:         @accent-color; //AL
 @navbar-default-link-active-bg:            transparent; //AL
 @navbar-default-link-disabled-color:       @feature2-color; //AL
 @navbar-default-link-disabled-bg:          transparent; //AL
 
 // Navbar brand label
 @navbar-default-brand-color:               @accent-color; //AL
-@navbar-default-brand-hover-color:         @feature1-color; //AL
-@navbar-default-brand-hover-bg:            transparent; //AL
+@navbar-default-brand-hover-color:         @accent-color; //AL
+@navbar-default-brand-hover-bg:            rgba(255, 255, 255, 0.4); //AL
 
 // Navbar toggle
 @navbar-default-toggle-hover-bg:           red;
 @navbar-default-toggle-icon-bar-bg:        red;
 @navbar-default-toggle-border-color:       red;
 
-
-// Navs
+// Dropdowns
 //
-//##
+// Dropdown menu container and contents.
+
+// Background for the dropdown menu.
+@dropdown-bg:                    transparent; //AL
+// Dropdown menu `border-color`.
+@dropdown-border:                none; //AL
+// Dropdown menu `border-color` **for IE8**.
+@dropdown-fallback-border:       none; //AL
+
+
+
+@dropdown-link-color:            @paper-color; //AL
+@dropdown-link-hover-color:      @accent-color; //AL
+@dropdown-link-hover-bg:         rgba(255, 255, 255, 0.4); //AL 
+@dropdown-divider-bg:				@accent-color; //AL
+@dropdown-link-active-color:     @component-active-color;
+// Active dropdown menu item background color.
+@dropdown-link-active-bg:        @component-active-bg;
 
 body {
 	font-weight: @font-weight-base;
+}
+
+a {
+	text-decoration: underline;
 }
 
 .bgimage {
@@ -114,21 +134,88 @@ body {
 
 .navbar li:hover, .navbar-collapse li:hover{
 		text-decoration: @link-hover-decoration;
-		background: rgba(255, 255, 255, 0.4); // fix for nav item transparency 
-		background-blend-mode: multiply;
+		background-blend-mode:normal;
 }
 
-.navbar li, .navbar-collapse li {
-	
+.navbar li a, .navbar-collapse li a, .navbar-default li a{
+	text-decoration: none;
 }
+
+
+
+#footbox p {
+	background-color: transparent;
+	font-family: @font-family-sans-serif;
+	color: @base-text-color;
+	font-size: @font-size-base * 1.2;
+	font-weight: 300;
+}
+
+/*#footbox p a {
+	color: @feature1-color;
+}
+
+#footbox p a:hover {
+	color: @accent-color;
+}*/
 
 .navbar-brand {
 	font-family: @font-family-sans-serif;	
 	font-size: @font-size-base * 3.2; 
 	font-weight: 700;
 	padding-left:0px;
+	background-color: transparent;
+	text-decoration: none;
+
 }
 
-.navbar-header{
-	/*padding:0px;*/
+hr {
+    height: 1px;
+    background-color: @feature2-color;
+    width: 100%;
 }
+
+	#authorDate, #licence, #contactUs {
+		text-align: center;
+		/*text-decoration: underline;*/
+	}
+
+	#licence {
+		transform: translateY(5px);
+	}
+
+@media screen and (min-width: 768px){
+  .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+        display: block;
+    }
+    .dropdown-menu{
+        margin-top: 0px;
+    }
+
+    .dropdown-toggle{
+        margin-bottom: 2px;
+    }
+    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+        margin-bottom: 0;
+    }
+
+    #contactUs {
+    	text-align: left;
+    }
+
+	#authorDate {
+		text-align: right;
+	}
+
+	#licence {
+		text-align: center;
+		transform: translateY(5px);
+	}
+}
+
+
+
+
+
+
+
