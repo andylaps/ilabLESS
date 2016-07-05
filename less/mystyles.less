@@ -4,7 +4,6 @@ the WSAiLab project
 It's best to copy them here rather than edit the original
 I learned this from experience! 
 AL 18/06/16 
-
 */ 
 
 // Override colors 
@@ -32,9 +31,8 @@ AL 18/06/16
 /*Base font details*/
 @font-family-base:        	@font-family-serif; //AL
 @font-size-base:          	16px; //AL
-@font-weight-base:			300;	// light AL	
+@font-weight-base:			500;	// light AL	
 @text-color:            	@base-text-color; //AL 
-
 
 /*Headings*/
 @headings-font-family:    @font-family-sans-serif; 
@@ -115,7 +113,7 @@ body {
 }
 
 a {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .bgimage {
@@ -141,14 +139,17 @@ a {
 	text-decoration: none;
 }
 
+footer {
+	background-color: @accent-color;
 
+}
 
-#footbox p {
+#footbox p, #footbox a {
 	background-color: transparent;
 	font-family: @font-family-sans-serif;
-	color: @base-text-color;
+	color: @paper-color;
 	font-size: @font-size-base * 1.2;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 /*#footbox p a {
@@ -199,7 +200,7 @@ hr {
         margin-bottom: 0;
     }
 
-    #contactUs {
+    #contactUs	 {
     	text-align: left;
     }
 
