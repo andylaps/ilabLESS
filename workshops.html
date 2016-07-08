@@ -16,25 +16,25 @@
 	<header>
 		<div class = "bgimage">
 			<div class= "container-fluid" id="headbox">
-				<nav class="navbar-default navbar-collapse" role="navigation">
+				<nav class="navbar-default" role="navigation">
 					<div class="nav navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false">
+							<span class="sr-only">toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+<!-- 							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+ -->						</button>
 						<a href="index.html" class="navbar-brand">WSA ilab</a>
 					</div>
-					<ul class="nav navbar-nav">
-						<li><a href="workshops.html">workshops</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">resources <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-								<li><a tabindex="-1" href="resources.html">all resources</a></li>
-								<li class="divider"></li>
-								<li><a tabindex="-1" href="webres.html">web sites</a></li>
-								<li><a tabindex="-1" href="videores.html">video</a></li>
-								<li><a tabindex="-1" href="printres.html">print</a></li>
-							</ul> <!-- dropdownMenu -->
-						</li> <!-- dropdown -->
-						<li><a href="blog.html">blog</a></li>
-						<li><a href="about.html">about</a></li>
-					</ul> 
+					<div class="collapse navbar-collapse" id="collapseMenu">
+						<ul class="nav navbar-nav">
+							<li><a href="workshops.html">workshops</a></li>
+							<li><a href="resources.html">resources</a></li>
+							<li><a href="blog.html">blog</a></li>
+							<li><a href="about.html">about</a></li>
+						</ul> <!-- nav navbar-nav -->
+					</div> <!-- collapse navbar-collapse -->
 				</nav>
 			</div> <!-- headbox -->
 		</div> <!-- bgimage -->
@@ -43,12 +43,14 @@
 		<div class="content container">	
 			<div class="row">
 				<div class="col-sm-6 col-md-4">
-					<h2>Coming up ...</h2>
+					<h2>Workshops</h2>
 					<p>... our new interactions and prototyping lab at Winchester School of Art, University of Southampton. Follow us on Twitter @wsa_ilab and watch this space. This is a mere holding page, it will <a href="#">grow and flourish</a> time goes by.</p>
 				</div> <!-- column -->
 				<div class="col-sm-6 col-md-4">
-					<h2>Wisdom</h2>
-					<blockquote>“The first essential in chemistry is that thou shouldest perform practical work and conduct experiments, for he who performs not practical work nor makes experiments will never attain to the least degree of mastery.”<br> <em> Jabir ibn Hayyan - late 8th century polymath Persian</em></blockquote></p>
+					<h2>Nothing to see here ...</h2>
+					<p>They're selling postcards of the hanging They're painting the passports brown
+The beauty parlor is filled with sailors The circus is in town Here comes the blind commissioner They've got him in a trance One hand is tied to the tight-rope walker The other is in his pantsAnd the riot squad they're restless They need somewhere to go As Lady and I look out tonight From Desolation Row. </p>
+
 				</div> <!-- column -->
 				<div class="col-sm-6 col-md-4">
 					<h2>Twitter</h2>
@@ -57,7 +59,6 @@
 	</main>
 	<footer>
 		<div class="content container-fluid" id="footbox">
-			<hr></hr>
 			<div class="row">
 				<div class="col-sm-4" id="contactUs">
 							<p><a href="contact.html">contact us</a></p>					

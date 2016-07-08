@@ -4,41 +4,44 @@ the WSAiLab project
 It's best to copy them here rather than edit the original
 I learned this from experience! 
 AL 18/06/16 
+
 */ 
 
 // Override colors 
 
 @paper-color:				#f5f5f5; // eggshell
-@feature2-color:			#aaa27b; // leather
-@feature1-color:			#475b5c; // dark
+@feature2-color:			#829092; // greygreen
+@feature1-color:			#0e2928; // navy
 @accent-color:				#b5313c; // red
 @base-text-color:			#828081; // tin
 
 
 //## Settings for some of the most global styles
-@body-bg:               @paper-color;
-@text-color:            @base-text-color;
-@link-color:            @feature1-color; //AL
+@body-bg:               @paper-color; //AL
+@text-color:            @base-text-color; //AL
+@link-color:            @feature2-color; //AL
 @link-hover-color:      @accent-color; //AL
+
 // Link hover decoration
 @link-hover-decoration: none; //AL
 
 /*Fonts*/
-@font-family-sans-serif:  "Freight-Sans-Pro", sans-serif;
-@font-family-serif:       "Freight-Text-Pro", serif;
+@font-family-sans-serif:  "Freight-Sans-Pro", sans-serif; //AL
+@font-family-serif:       "Freight-Text-Pro", serif; //AL
 @font-family-monospace:   "Courier New", monospace;
 
 /*Base font details*/
 @font-family-base:        	@font-family-serif; //AL
 @font-size-base:          	16px; //AL
-@font-weight-base:			500;	// light AL	
+@font-weight-base:			300;	// light AL	
 @text-color:            	@base-text-color; //AL 
 
+
 /*Headings*/
-@headings-font-family:    @font-family-sans-serif; 
+@headings-font-family:    @font-family-sans-serif; //AL
 @headings-font-weight:    700; // bold AL
 @headings-line-height:    1.1;
-@headings-color:          @feature2-color;
+@headings-color:          @feature2-color; //AL
 
 @font-size-large:         ceil((@font-size-base * 1.25)); 
 @font-size-small:         ceil((@font-size-base * 0.85)); 
@@ -52,7 +55,6 @@ AL 18/06/16
 
 
 //== Navbar
-//
 
 
 //##
@@ -68,6 +70,7 @@ AL 18/06/16
 @navbar-default-color:             			@base-text-color; //AL 
 @navbar-default-bg:               			transparent; //AL 
 @navbar-default-border:            			none; //AL 
+
 // Navbar links
 @navbar-default-link-color:                @paper-color; //AL
 @navbar-default-link-hover-color:          @accent-color; //AL
@@ -82,11 +85,19 @@ AL 18/06/16
 @navbar-default-brand-hover-color:         @accent-color; //AL
 @navbar-default-brand-hover-bg:            rgba(255, 255, 255, 0.4); //AL
 
-// Navbar toggle
-@navbar-default-toggle-hover-bg:           red;
-@navbar-default-toggle-icon-bar-bg:        red;
-@navbar-default-toggle-border-color:       red;
+// Navbar toggle - Hamburger menu variables
+@navbar-default-toggle-hover-bg:           rgba(255, 255, 255, 0.4); //AL
+@navbar-default-toggle-icon-bar-bg:        @paper-color; //AL
+@navbar-default-toggle-border-color:       transparent; //AL
 
+
+.navbar-toggle {
+	background-color: @accent-color;
+}
+
+
+// Original dropdown menu for resources designed out & used tabs instead - neater
+// AL 05/07/16
 // Dropdowns
 //
 // Dropdown menu container and contents.
@@ -98,8 +109,6 @@ AL 18/06/16
 // Dropdown menu `border-color` **for IE8**.
 @dropdown-fallback-border:       none; //AL
 
-
-
 @dropdown-link-color:            @paper-color; //AL
 @dropdown-link-hover-color:      @accent-color; //AL
 @dropdown-link-hover-bg:         rgba(255, 255, 255, 0.4); //AL 
@@ -108,19 +117,30 @@ AL 18/06/16
 // Active dropdown menu item background color.
 @dropdown-link-active-bg:        @component-active-bg;
 
+// Tabs
+@nav-tabs-border-color:                     @paper-color; //AL
+
+@nav-tabs-link-hover-border-color:          @paper-color; //AL
+
+@nav-tabs-active-link-hover-bg:             @accent-color; //AL
+@nav-tabs-active-link-hover-color:          @paper-color; //AL
+@nav-tabs-active-link-hover-border-color:   @paper-color; //AL
+
+@nav-tabs-justified-link-border-color:       	transparent; //AL
+@nav-tabs-justified-active-link-border-color:     transparent; //AL
+
+
+
 body {
 	font-weight: @font-weight-base;
-}
-
-a {
-	text-decoration: none;
 }
 
 .bgimage {
 	background-image:	url('../images/ilab0001e.jpg');
 	background-position: center center;
 	background-size: cover;
-	height: 300px;
+	min-height: 100px;
+	/*height: 300px;*/
 }
 
 .navbar, .navbar-collapse {
@@ -130,35 +150,11 @@ a {
 	padding-left: 15px;
 }
 
+
 .navbar li:hover, .navbar-collapse li:hover{
 		text-decoration: @link-hover-decoration;
 		background-blend-mode:normal;
 }
-
-.navbar li a, .navbar-collapse li a, .navbar-default li a{
-	text-decoration: none;
-}
-
-footer {
-	background-color: @accent-color;
-
-}
-
-#footbox p, #footbox a {
-	background-color: transparent;
-	font-family: @font-family-sans-serif;
-	color: @paper-color;
-	font-size: @font-size-base * 1.2;
-	font-weight: 500;
-}
-
-/*#footbox p a {
-	color: @feature1-color;
-}
-
-#footbox p a:hover {
-	color: @accent-color;
-}*/
 
 .navbar-brand {
 	font-family: @font-family-sans-serif;	
@@ -166,8 +162,28 @@ footer {
 	font-weight: 700;
 	padding-left:0px;
 	background-color: transparent;
-	text-decoration: none;
+}
 
+.nav-tabs li {
+	font-family: @font-family-sans-serif;
+	background-color: @paper-color;	
+	font-size: @font-size-base * 1.2;
+	font-weight: 500;
+	border-radius: 0;
+}
+
+.nav-tabs li a {
+	color: @base-text-color;
+} 
+
+
+.nav-tabs li a:hover {
+	color: @accent-color;
+	background-color: @paper-color;
+}
+
+.tabs {
+	border-width: 5px;
 }
 
 hr {
@@ -176,47 +192,68 @@ hr {
     width: 100%;
 }
 
-	#authorDate, #licence, #contactUs {
-		text-align: center;
-		/*text-decoration: underline;*/
-	}
+footer {
+	background-color: @accent-color;
 
-	#licence {
-		transform: translateY(5px);
-	}
-
-@media screen and (min-width: 768px){
-  .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
-        display: block;
-    }
-    .dropdown-menu{
-        margin-top: 0px;
-    }
-
-    .dropdown-toggle{
-        margin-bottom: 2px;
-    }
-    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
-        margin-bottom: 0;
-    }
-
-    #contactUs	 {
-    	text-align: left;
-    }
-
-	#authorDate {
-		text-align: right;
-	}
-
-	#licence {
-		text-align: center;
-		transform: translateY(5px);
-	}
 }
 
+#contactUs, #licence, #authorDate {
+	text-align: center;
+}
 
+a {
+	font-weight: @font-weight-base+300;
+}
 
+#footbox p, #footbox a {
+	background-color: transparent;
+	font-family: @font-family-sans-serif;
+	color: @paper-color;
+	font-size: @font-size-base * 1.2;
+	font-weight: 300;
+	font-weight: 500;
+}
 
+footer {
+	padding-top: 5px;
+	margin-bottom: 0px;
+}
 
+#footbox a:hover {
+	color: @feature1-color;
+}
 
+@media screen and (min-width: 768px){
 
+	.bgimage {
+		background-image:	url('../images/ilab0001e.jpg');
+		background-position: center center;
+		background-size: cover;
+		height: 300px;
+	}
+
+  .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+      display: block;
+   }
+    .dropdown-menu{
+      margin-top: 0px;
+   }
+    .dropdown-toggle{
+      margin-bottom: 2px;
+   }
+    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+      margin-bottom: 0;
+   }
+    #contactUs p {
+    	text-align: left;
+    	transform: translateY(5px);
+   }
+	#licence p {
+    	text-align: center;
+    	transform: translateY(5px);
+   }
+    #authorDate p {
+    	text-align: right;
+    	transform: translateY(5px);
+   }
+}

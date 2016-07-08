@@ -16,59 +16,119 @@
 	<header>
 		<div class = "bgimage">
 			<div class= "container-fluid" id="headbox">
-				<nav class="navbar-default navbar-collapse" role="navigation">
+				<nav class="navbar-default" role="navigation">
 					<div class="nav navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false">
+							<span class="sr-only">toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+<!-- 							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+ -->						</button>
 						<a href="index.html" class="navbar-brand">WSA ilab</a>
 					</div>
-					<ul class="nav navbar-nav">
-						<li><a href="workshops.html">workshops</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">resources <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-								<li><a tabindex="-1" href="resources.html">all resources</a></li>
-								<li class="divider"></li>
-								<li><a tabindex="-1" href="webres.html">web sites</a></li>
-								<li><a tabindex="-1" href="videores.html">video</a></li>
-								<li><a tabindex="-1" href="printres.html">print</a></li>
-							</ul> <!-- dropdownMenu -->
-						</li> <!-- dropdown -->
-						<li><a href="blog.html">blog</a></li>
-						<li><a href="about.html">about</a></li>
-					</ul> 
+					<div class="collapse navbar-collapse" id="collapseMenu">
+						<ul class="nav navbar-nav">
+							<li><a href="workshops.html">workshops</a></li>
+							<li><a href="resources.html">resources</a></li>
+							<li><a href="blog.html">blog</a></li>
+							<li><a href="about.html">about</a></li>
+						</ul> <!-- nav navbar-nav -->
+					</div> <!-- collapse navbar-collapse -->
 				</nav>
 			</div> <!-- headbox -->
 		</div> <!-- bgimage -->
 	</header>	
 	<main>
 		<div class="content container">
-			
+
 			<div class="tabbable tabs">
 				<ul class="nav nav-tabs">	
-					<li class="active"><a href="#web" data-toggle="tab"</a>Web</a></li>
-					<li><a href="#video" data-toggle="tab"</a>Video</a></li>
-					<li><a href="#print" data-toggle="tab"</a>Print</a></li>	
+					<li class="active"><a href="#webRes" data-toggle="tab">Web</a></li>
+					<li><a href="#vidRes" data-toggle="tab">Video</a></li>
+					<li><a href="#priRes" data-toggle="tab">Print</a></li>	
 				</ul> <!-- nav nav-tabs -->
 			</div> <!-- tabbable tabs -->
-
 			<section class="tab-content">
-				<div class="tab-pane active" id="web">
-					<p>Web stuff goes here</p>
+				<div class="tab-pane active" id="webRes">
+					<h2>Web resources</h2>
+					<div class="row">					
+						<link class="media link001">
+							<div class="col-sm-6 col-md-4">
+								<a class = "media-left" href="#" ><img class="media-object" src="http://placehold.it/100" alt="link image"></a>
+								<div class="media-body">
+									<h4 class="media-heading">Bob Dylan</h4>
+									<p>They're selling postcards of the hanging They're painting the passports brown
+									The beauty parlor is filled with sailors The circus is in town Here comes the blind commissioner They've got him in a trance One hand is tied to the tight-rope walker The other is in his pantsAnd the riot squad they're restless They need somewhere to go As Lady and I look out tonight From Desolation Row. </p>
+								</div> <!-- media-body -->
+							</div> <!-- col -->	
+						</link> <!-- link0001 -->
+						<link class="media link002">
+							<div class="col-sm-6 col-md-4">
+								<a class = "media-left" href="#" ><img class="media-object" src="http://placehold.it/100" alt="link image"></a>
+								<div class="media-body">
+									<h4 class="media-heading">Robert Pirsig</h4>
+									<p>The TV scientist who mutters sadly, “The experiment is a failure; we have failed to achieve what we had hoped for,” is suffering mainly from a bad script writer. An experiment is never a failure solely because it fails to achieve predicted results. An experiment is a failure only when it also fails adequately to test the hypothesis in question, when the data it produces don't prove anything one way or another.
+									Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values</p>
+								</div> <!-- media-body -->
+							</div> <!-- col -->	
+						</link> <!-- link0002 -->
+						<link class="media link003">
+							<div class="col-sm-6 col-md-4">									
+							<a class = "media-left" href="#" ><img class="media-object" src="http://placehold.it/100" alt="link image"></a>
+								<div class="media-body">
+									<h4 class="media-heading">Guy Debord</h4>
+									<p>It is hardly surprising that children should enthusiastically start their education at an early age with the Absolute Knowledge of computer science; while they are unable to read, for reading demands making judgments at every line. Conversation is almost dead, and soon so too will be those who knew how to speak. </p>
+								</div> <!-- media-body -->
+							</div> <!-- col -->	
+						</link> <!-- link0003 -->
+					</div> <!-- row -->
+					<div class="row">
+						<link class="media link005">
+							<div class="col-sm-6 col-md-4">
+								<a class = "media-left" href="#" ><img class="media-object" src="http://placehold.it/100" alt="link image"></a>
+								<div class="media-body">
+									<h4 class="media-heading">Robert Pirsig</h4>
+									<p>The TV scientist who mutters sadly, “The experiment is a failure; we have failed to achieve what we had hoped for,” is suffering mainly from a bad script writer. An experiment is never a failure solely because it fails to achieve predicted results. An experiment is a failure only when it also fails adequately to test the hypothesis in question, when the data it produces don't prove anything one way or another.
+									Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values</p>
+								</div> <!-- media-body -->
+							</div> <!-- col -->	
+						</link> <!-- link000 -->				
+						<link class="media link006">
+							<div class="col-sm-6 col-md-4">
+								<a class = "media-left" href="#" ><img class="media-object" src="http://placehold.it/100" alt="link image"></a>
+								<div class="media-body">
+									<h4 class="media-heading">Bob Dylan</h4>
+									<p>They're selling postcards of the hanging They're painting the passports brown
+									The beauty parlor is filled with sailors The circus is in town Here comes the blind commissioner They've got him in a trance One hand is tied to the tight-rope walker The other is in his pantsAnd the riot squad they're restless They need somewhere to go As Lady and I look out tonight From Desolation Row. </p>
+								</div> <!-- media-body -->
+							</div> <!-- col -->	
+						</link> <!-- link0006 -->
+						<link class="media link004">
+							<div class="col-sm-6 col-md-4">									
+							<a class = "media-left" href="#" ><img class="media-object" src="http://placehold.it/100" alt="link image"></a>
+								<div class="media-body">
+									<h4 class="media-heading">Guy Debord</h4>
+									<p>It is hardly surprising that children should enthusiastically start their education at an early age with the Absolute Knowledge of computer science; while they are unable to read, for reading demands making judgments at every line. Conversation is almost dead, and soon so too will be those who knew how to speak. </p>
+								</div> <!-- media-body -->
+							</div> <!-- col -->	
+						</link> <!-- link0004 -->
+					</div> <!-- row -->		
 				</div> <!-- web -->
 
-				<div class="tab-pane" id="video">
-					<p>Video stuff goes here</p>
-				</div> <!-- web -->
+				<div class="tab-pane" id="vidRes">
+  								<p>paragraph content</p>
+				</div> <!-- video -->
 
-				<div class="tab-pane" id="print">
+				<div class="tab-pane" id="priRes">
 					<p>Print stuff goes here</p>
-				</div> <!-- web -->
+				</div> <!-- print -->
 			</section> <!-- tab-content -->
 
 		</div> <!-- container -->
 	</main>
 	<footer>
 		<div class="content container-fluid" id="footbox">
-			<hr></hr>
 			<div class="row">
 				<div class="col-sm-4" id="contactUs">
 							<p><a href="contact.html">contact us</a></p>					
