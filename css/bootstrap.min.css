@@ -6849,9 +6849,33 @@ footer {
     text-align: right;
     transform: translateY(5px);
   }
+  #shortLinks {
+    margin-left: -25px;
+  }
 }
-/*
-#resourceTabs	{
-	width: 50%;
+#resources a h4,
+#resources a h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-*/
+#resources a:hover h4,
+#resources a:hover h5 {
+  color: #b5313c;
+  margin-top: 0px;
+}
+.img-right-space {
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+#innerRowRight h4 {
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+#shortLinks h2 {
+  color: #b5313c;
+  text-align: center;
+  font-size: 50px;
+}
