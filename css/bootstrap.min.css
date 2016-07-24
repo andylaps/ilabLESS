@@ -6794,7 +6794,8 @@ footer {
 }
 #contactUs,
 #licence,
-#authorDate {
+#authorDate,
+#top {
   text-align: center;
 }
 a {
@@ -6807,7 +6808,6 @@ a {
   color: #f5f5f5;
   font-size: 19.2px;
   font-weight: 300;
-  font-weight: 500;
 }
 footer {
   padding-top: 5px;
@@ -6816,6 +6816,14 @@ footer {
 #footbox a:hover {
   color: #0e2928;
 }
+#licence a {
+  font-weight: 100;
+}
+#ccIcons {
+  text-align: center;
+  font-size: xx-large;
+}
+/*LARGER SCREENS ONLY */
 @media screen and (min-width: 768px) {
   .bgimage {
     background-image: url('../images/ilab0001e.jpg');
@@ -6840,13 +6848,19 @@ footer {
   #contactUs p {
     text-align: left;
     transform: translateY(5px);
+    text-decoration-style: normal;
   }
   #licence p {
     text-align: center;
     transform: translateY(5px);
+    line-height: 50%;
   }
   #authorDate p {
     text-align: right;
+    transform: translateY(5px);
+  }
+  #top p {
+    text-align: center;
     transform: translateY(5px);
   }
   #shortLinks {
@@ -6878,4 +6892,5 @@ footer {
   color: #b5313c;
   text-align: center;
   font-size: 50px;
+  margin-top: 0px;
 }

@@ -199,7 +199,7 @@ footer {
 
 }
 
-#contactUs, #licence, #authorDate {
+#contactUs, #licence, #authorDate, #top {
 	text-align: center;
 }
 
@@ -211,9 +211,8 @@ a {
 	background-color: transparent;
 	font-family: @font-family-sans-serif;
 	color: @paper-color;
-	font-size: @font-size-base * 1.2;
+	font-size: @font-size-base * 1.2;	
 	font-weight: 300;
-	font-weight: 500;
 }
 
 footer {
@@ -224,6 +223,18 @@ footer {
 #footbox a:hover {
 	color: @feature1-color;
 }
+
+#licence  a{
+	font-weight: 100;
+
+}
+
+#ccIcons {
+	text-align: center;
+	font-size: xx-large;
+}
+
+/*LARGER SCREENS ONLY */
 
 @media screen and (min-width: 768px){
 
@@ -249,14 +260,22 @@ footer {
    #contactUs p {
     	text-align: left;
     	transform: translateY(5px);
+    	text-decoration-style: normal;
    }
 	#licence p {
     	text-align: center;
     	transform: translateY(5px);
+    	line-height: 50%;
    }
+
    #authorDate p {
     	text-align: right;
     	transform: translateY(5px);
+   }
+
+	#top p {
+   	text-align: center;
+   	transform: translateY(5px);	
    }
 
    #shortLinks {
@@ -291,6 +310,7 @@ footer {
 	color: @accent-color;
 	text-align: center;
 	font-size: 50px;
+	margin-top: 0px;
 }
 
 
