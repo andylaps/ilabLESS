@@ -6866,6 +6866,9 @@ footer {
   #shortLinks {
     margin-left: -25px;
   }
+  .fontChange {
+    font-family: "Freight-Text-Pro", serif;
+  }
 }
 #resources a h4,
 #resources a h5 {
@@ -6893,4 +6896,8 @@ footer {
   text-align: center;
   font-size: 50px;
   margin-top: 0px;
+}
+.link-list {
+  list-style-type: none;
+  list-style-image: none;
 }
