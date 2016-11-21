@@ -1075,7 +1075,7 @@ body {
   font-family: "Freight-Text-Pro", serif;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #828081;
+  color: #4d4d4d;
   background-color: #f5f5f5;
 }
 input,
@@ -1092,7 +1092,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #b5313c;
+  color: #e06dbf;
   text-decoration: none;
 }
 a:focus {
@@ -2900,7 +2900,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #c1c0c1;
+  color: #8d8d8d;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -3410,7 +3410,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #b5313c;
+  color: #e06dbf;
   text-decoration: none;
   background-color: transparent;
 }
@@ -3532,7 +3532,7 @@ tbody.collapse.in {
   height: 1px;
   margin: 10px 0;
   overflow: hidden;
-  background-color: #b5313c;
+  background-color: #e06dbf;
 }
 .dropdown-menu > li > a {
   display: block;
@@ -3546,7 +3546,7 @@ tbody.collapse.in {
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #b5313c;
+  color: #e06dbf;
   background-color: rgba(255, 255, 255, 0.4);
 }
 .dropdown-menu > .active > a,
@@ -4020,7 +4020,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #f5f5f5;
-  background-color: #b5313c;
+  background-color: #e06dbf;
   border: 1px solid #f5f5f5;
   border-bottom-color: transparent;
   cursor: default;
@@ -4479,28 +4479,28 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: none;
 }
 .navbar-default .navbar-brand {
-  color: #b5313c;
+  color: #e06dbf;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #b5313c;
+  color: #e06dbf;
   background-color: rgba(255, 255, 255, 0.4);
 }
 .navbar-default .navbar-text {
-  color: #828081;
+  color: #4d4d4d;
 }
 .navbar-default .navbar-nav > li > a {
   color: #f5f5f5;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #b5313c;
+  color: #e06dbf;
   background-color: rgba(255, 255, 255, 0.4);
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #b5313c;
+  color: #e06dbf;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -4527,7 +4527,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: transparent;
-  color: #b5313c;
+  color: #e06dbf;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -4535,13 +4535,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #b5313c;
+    color: #e06dbf;
     background-color: rgba(255, 255, 255, 0.4);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #b5313c;
+    color: #e06dbf;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -4555,14 +4555,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #f5f5f5;
 }
 .navbar-default .navbar-link:hover {
-  color: #b5313c;
+  color: #e06dbf;
 }
 .navbar-default .btn-link {
   color: #f5f5f5;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #b5313c;
+  color: #e06dbf;
 }
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
@@ -4727,7 +4727,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #b5313c;
+  color: #e06dbf;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -5004,7 +5004,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #828081;
+  color: #4d4d4d;
 }
 .alert {
   padding: 15px;
@@ -6732,21 +6732,61 @@ I learned this from experience!
 AL 18/06/16 
 
 */
+/*@base-text-color:			#828081; // tin */
 /*Fonts*/
 /*Base font details*/
 /*Headings*/
 .navbar-toggle {
-  background-color: #b5313c;
+  background-color: #e06dbf;
 }
 body {
-  font-weight: 300;
+  font-weight: 400;
 }
-.bgimage {
-  background-image: url('../images/ilab0001e.jpg');
+.bgimage0 {
+  background-image: url('../images/ardLaptop2.jpg');
   background-position: center center;
   background-size: cover;
   min-height: 100px;
   /*height: 300px;*/
+}
+.bgimage1 {
+  background-image: url('../images/alchemy2.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
+}
+.bgimage2 {
+  background-image: url('../images/lens2.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
+}
+.bgimage3 {
+  background-image: url('../images/diskDrive2.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
+}
+.bgimage4 {
+  background-image: url('../images/garage2.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
+}
+.bgimage5 {
+  background-image: url('../images/gauge2.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
+}
+.bgimage6 {
+  background-image: url('../images/crowd2.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
+}
+.nav {
+  padding-top: 10px;
 }
 .navbar,
 .navbar-collapse {
@@ -6775,10 +6815,10 @@ body {
   border-radius: 0;
 }
 .nav-tabs li a {
-  color: #828081;
+  color: #4d4d4d;
 }
 .nav-tabs li a:hover {
-  color: #b5313c;
+  color: #e06dbf;
   background-color: #f5f5f5;
 }
 .tabs {
@@ -6790,7 +6830,7 @@ hr {
   width: 100%;
 }
 footer {
-  background-color: #b5313c;
+  background-color: #e06dbf;
 }
 #contactUs,
 #licence,
@@ -6799,7 +6839,7 @@ footer {
   text-align: center;
 }
 a {
-  font-weight: 600;
+  font-weight: 700;
 }
 #footbox p,
 #footbox a {
@@ -6825,8 +6865,44 @@ footer {
 }
 /*LARGER SCREENS ONLY */
 @media screen and (min-width: 768px) {
-  .bgimage {
-    background-image: url('../images/ilab0001e.jpg');
+  .bgimage0 {
+    background-image: url('../images/ardLaptop2.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+  }
+  .bgimage1 {
+    background-image: url('../images/alchemy2.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+  }
+  .bgimage2 {
+    background-image: url('../images/lens2.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+  }
+  .bgimage3 {
+    background-image: url('../images/diskDrive2.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+  }
+  .bgimage4 {
+    background-image: url('../images/garage2.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+  }
+  .bgimage5 {
+    background-image: url('../images/gauge2.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+  }
+  .bgimage6 {
+    background-image: url('../images/crowd2.jpg');
     background-position: center center;
     background-size: cover;
     height: 300px;
@@ -6869,13 +6945,22 @@ footer {
 }
 #resources a h4,
 #resources a h5 {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 #resources a:hover h4,
 #resources a:hover h5 {
-  color: #b5313c;
-  margin-top: 0px;
+  color: #e06dbf;
+  margin-top: 10px;
+}
+#activities h2 {
+  padding-bottom: 10px;
+}
+#about section img {
+  margin-bottom: 15px;
+}
+#news h3 {
+  color: #e06dbf;
 }
 .img-right-space {
   margin-right: 10px;
@@ -6883,14 +6968,30 @@ footer {
   margin-top: 0px;
   margin-left: 0px;
 }
+#innerRowRight {
+  margin-top: 25px;
+}
 #innerRowRight h4 {
   text-align: left;
   margin-left: 0px;
   margin-top: 0px;
 }
+.img-circle {
+  margin-top: 25px;
+}
 #shortLinks h2 {
-  color: #b5313c;
+  color: #e06dbf;
   text-align: center;
   font-size: 50px;
   margin-top: 0px;
+}
+blockquote {
+  color: #e06dbf;
+  /*margin-top:15px;*/
+}
+.gap-left {
+  margin-left: 5px;
+}
+.gap-right {
+  margin-right: 5px;
 }

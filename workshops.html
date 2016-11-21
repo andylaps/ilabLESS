@@ -10,9 +10,9 @@
 	<link href="css/cc-icons.min.css" rel="stylesheet">
   
   	<!-- <link rel="stylesheet" href="css/styles.css"> <! This line no longer needed as mystyles incorporated into bootstrap.less  --> 
-	<title>WSAiLab workshops</title>
+	<title>WSAiLab activities</title>
 </head>
-<body id="workshops">
+<body id="activities">
 	<header>
 		<div class = "bgimage">
 			<div class= "container-fluid" id="headbox">
@@ -40,22 +40,101 @@
 		</div> <!-- bgimage -->
 	</header>	
 	<main>
-		<div class="content container">	
-			<div class="row">
-				<div class="col-sm-6 col-md-4">
-					<h2>Workshops</h2>
-					<p>... our new interactions and prototyping lab at Winchester School of Art, University of Southampton. Follow us on Twitter @wsa_ilab and watch this space. This is a mere holding page, it will <a href="#">grow and flourish</a> time goes by.</p>
-				</div> <!-- column -->
-				<div class="col-sm-6 col-md-4">
-					<h2>Nothing to see here ...</h2>
-					<p>They're selling postcards of the hanging They're painting the passports brown
-The beauty parlor is filled with sailors The circus is in town Here comes the blind commissioner They've got him in a trance One hand is tied to the tight-rope walker The other is in his pantsAnd the riot squad they're restless They need somewhere to go As Lady and I look out tonight From Desolation Row. </p>
+		<div class="content container-fluid text-left" id="resourceTabs">
+			<div class="tabbable tabs">
+				<ul class="nav nav-tabs">	
+					<li class="active"><a href="#makeRes" data-toggle="tab">Make</a></li>
+					<li><a href="#theoryRes" data-toggle="tab">Theory</a></li>
+					<li><a href="#projectsRes" data-toggle="tab">Projects</a></li>	
+				</ul> <!-- nav nav-tabs -->
+			</div> <!-- tabbable tabs -->
+			<section class="tab-content">
+				<div class="tab-pane active" id="makeRes">
+					<h2>Featured</h2>
+					<div class="row" id="outerRow">
+						<div class="row" id="innerRow">
+						<section class="col-sm-8 col-md-9" id="innerRowLeft">
+							<section class="col-sm-6 col-md-4">
+								<a href="https://www.arduino.cc">
+								<img class= "img-responsive img-circle center-block" src="images/ArduinoUnoSMDFront.jpg" alt="link image">
+								<h4 class="text-center">The home of Arduino</h4></a>
+								<p>“Arduino is an open-source electronics platform based on easy-to-use hardware and software. It's intended for anyone making interactive projects. Arduino senses the environment by receiving inputs from many sensors, and affects its surroundings by controlling lights, motors, and other actuators. You can tell your Arduino what to do by writing code in the Arduino programming language and using the Arduino development environment.” </p>
+							</section> <!-- col -->
+							<section class="col-sm-6 col-md-4">
+								<a href="http://www.wired.co.uk/video/shenzhen-the-maker-movement" target="blank">
+								<img class= "img-responsive img-circle center-block" src="images/shenzen1.jpg" alt="link image">
+								<h4 class="text-center">Shenzen makers <div class="badge">video</div></h4></a>
+								<p>Second episode of the WIRED documentary series. The video takes "a look at how the Maker movement has been appropriated in a frenetic manufacturing hub like Shenzhen, before exploring how the city’s attitudes to open source hardware are so different to those of the West, and what this might mean for both sides of the argument in the near future. Future Cities is part of a new flagship documentary strand from WIRED Video that explores the technologies, trends and ideas that are changing our world." WIRED magazine. 2016.</p>
+							</section> <!-- col -->
+							<section class="col-sm-6 col-md-4">
+								<a href="https://wiki.hackerspaces.org/Hackerspaces">
+								<img class= "img-responsive img-circle center-block" src="images/hackerspaces1.jpg" alt="link image">
+								<h4 class="text-center">Hackerspaces wiki</h4></a>
+								<p>"This website is for Anyone and Everyone who wants to share their hackerspace stories and questions with the global hackerspaces community." Hackerspace community wiki with loads of intereting and useful stuff here including: how to get started; articles; video lessons learned; education; theory; movies and documentaries; events; community; lists and maps; music playlists and plenty more. </p>
+							</section> <!-- col -->
+							<div class="clearfix visible-md-block visible-lg-block"></div>
+							<section class="col-sm-6 col-md-4">
+								<a href="#">
+								<img class= "img-responsive img-circle center-block" src="images/simone1.jpg" alt="link image">
+								<h4 class="text-center">Simone Giertz <div class="badge">video</div></h4></a>
+								<p>YouTube channel from the Queen of Intentionally Shitty Robots. 'A shitty robot, says Stockholm-based Giertz, "is one that solves a problem that doesn't exist, or solves a problem that does exist, but in a bad way".  ... People think it's about the robot uprising, or a commentary on people being so lazy that they can't even make themselves breakfast," Giertz muses. "Electronics are getting more and more accessible now - you don't have to be an engineer to start building things. I really want to spur [on] that democratisation of technology."' Text by <a href = "http://www.wired.co.uk/article/comedian-simone-giertz-impractical-robots" target="blank">Sam Rowe in WIRED July 2016.</a> </p>
+							</section> <!-- col -->
+							<section class="col-sm-6 col-md-4">
+								<a href="https://github.com/uvicmakerlab/dhsi2016/blob/master/index.md#physical-computing--fabrication">
+								<img class= "img-responsive img-circle center-block" src="images/dhsi1.jpg" alt="link image">
+								<h4 class="text-center">Physical Computing and Fabrication</h4></a>
+								<p>Course documentation from University of Victoria, Digital Humanities Summer Institute. Via GitHub.</p> <p>In the course they <em>"survey physical computing and digital fabrication techniques by modelling, fabricating, programming, and repurposing objects as both bits and atoms. This process of converting objects from this material into that material involves negotiations between screen media and tactile media."</em> Includes a comprehensive and useful <a href="https://github.com/uvicmakerlab/dhsi2016/blob/master/index.md#bibliography" target="blank">bibliography</a></p>
+							</section> <!-- col -->
+							<section class="col-sm-6 col-md-4">
+								<a href="https://github.com/uvicmakerlab/dhsi2016/blob/master/index.md#physical-computing--fabrication">
+								<img class= "img-responsive img-circle center-block" src="http://placehold.it/100" alt="link image">
+								<h4>Robert Pirsig</h4></a>
+								<p>The TV scientist who mutters sadly, “The experiment is a failure; we have failed to achieve what we had hoped for,” is suffering mainly from a bad script writer. An experiment is never a failure solely because it fails to achieve predicted results. An experiment is a failure only when it also fails adequately to test the hypothesis in question, when the data it produces don't prove anything one way or another. Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values</p>
+							</section> <!-- col -->
+								<div class="clearfix hide-xs"></div>
+							<section class="col-sm-6 col-md-4">
+								<a href="#">
+								<img class= "img-responsive img-circle center-block" src="http://placehold.it/100" alt="link image">
+								<h4>Nigel Cross</h4></a>
+								<p>Traditionally, design teachers have been practising designers who pass on their knowledge, skills and values through a process of apprenticeship. Design students ‘act out’ the role of designer in small projects6, and are tutored in the process by more experienced designers. These design teachers are firstly designers, and only secondly and incidentally teachers. This model may be defensible for specialist education, but in general education all teachers are (or should be) firstly teachers, and only secondly, if at all, specialists in any field. Nigel Cross 1982</p>
+							</section> <!-- col -->
+						</section> <!-- innerRowLeft -->
+						<section class="col-sm-4 col-md-3" id="innerRowRight">
+							<section class="col-xs-12" id="shortLinks">
+								<br class="visible-xs-block">
+						<!--	<img class="img-responsive pull-left img-right-space" src="http://placehold.it/100" alt="icon image"> -->
+								<h2><span class="glyphicon glyphicon-bookmark"></span></h2>
+									<p>A list of links to useful and interesting resources. When the featured resources get tired,  they come to this list to rest - they never go back. Links usually appear here with the most recently added at the top of the list.</p>
+									<hr class="hidden-xs"> 
+									<link id="res001">
+										<a href="http://dspace.mit.edu/handle/1721.1/67784" target="blank"><h5>&raquo; A kit of no parts <span class="visible-xs-inline"><small>MIT thesis</small></span></h5></a>
+										<p class="hidden-xs">"Recipes for materially diverse, functionally transparent and expressive electronics". MSc thesis. MIT 2011 Author: Hannah Perner-Wilson. PDF of thesis available.</p>
+									</link>
+									<link id="res002">
+										<a href="http://whatisamedialab.com/overview/" target="blank"><h5>&raquo; What is a media lab? <span class="visible-xs-inline"><small>book overview</small></span></h5></a>
+										<p class="hidden-xs">"Where did media labs come from and why do they occupy such an important role in contemporary discourse?" Book. 2016. Authors: Wershler D, Parikka J, Emerson, L. Online overview</p>
+									</link>
+									<link id="res003">
+										<a href="http://whatisamedialab.com/interviews/" target="blank"><h5>&raquo; What is a media lab? <span class="visible-xs-inline"><small>Interviews from the book</small></span></h5></a>
+										<p class="hidden-xs">Interviews from the book, "conducted with scholars/practitioners/directors affiliated with labs and digital humanities centers."</p>
+									</link>
+									<hr>
+									<h2><span class="glyphicon glyphicon-thumbs-up"></span></h2>
+									<p><small>Got suggestions for further resource links? We'd love to hear them so <a href="contact.html">let us know</a>. If you want to see your suggestion in the featured section, then we'll need a short blurb to go with it.</small></p>
+							</section> <!-- shortLinks -->
+						</section> <!-- innerRowRight -->
+						</div> <!-- innerRow -->
+					</div> <!--  outerRow -->
+				</div> <!-- makeRes tab-pane-->
 
-				</div> <!-- column -->
-				<div class="col-sm-6 col-md-4">
-					<h2>Twitter</h2>
-					<a class="twitter-timeline" data-height="400" data-theme="light" href="https://twitter.com/wsa_ilab">Tweets by wsa_ilab</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>				
-		</div>
+				<div class="tab-pane" id="theoryRes">
+  								<p>not enough resources yet to use this tab</p>
+				</div> <!-- theoryRes tab-pane -->
+
+				<div class="tab-pane" id="projectsRes">
+					<p>not enough resources yet to use this tab</p>
+				</div> <!-- print -->
+			</section> <!-- tab-content -->
 	</main>
 	<footer>
 		<div class="content container-fluid" id="footbox">
